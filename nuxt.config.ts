@@ -10,6 +10,11 @@ export default defineNuxtConfig({
     ],
   },
 
+  devServer: {
+    host: '0.0.0.0',
+    port: 9001,
+  },
+
   components: [
     {
       path: '~/components',
@@ -50,6 +55,8 @@ export default defineNuxtConfig({
   },
 
   fonts: {
+    // 使用bunny字体服务
+    provider: 'bunny',
     defaults: {
       weights: [300, 400, 500, 600, 700, 800],
     },
@@ -63,6 +70,7 @@ export default defineNuxtConfig({
   imports: {
     dirs: [
       './lib',
+      './mock',
     ],
   },
 

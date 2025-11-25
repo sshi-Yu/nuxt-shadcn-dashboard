@@ -1,0 +1,22 @@
+{
+  "Vue": {
+    "scope": "vue",
+    "prefix": "<vue",
+    "body": [
+      "<script setup lang='tsx'>",
+      "defineOptions({",
+      "\tname: '${TM_FILENAME_BASE}'",
+      "})",
+      "</script>\n",
+      "<template>",
+      "\t<div class=''>",
+      "\t\t$1",
+      "\t</div>",
+      "</template>\n",
+      "<style lang='scss' scoped>\n",
+      "</style>",
+      "$2"
+    ],
+    "description": "Vue3.3+defineOptions快速生成模板"
+  }
+}
